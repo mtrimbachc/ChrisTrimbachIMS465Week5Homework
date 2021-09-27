@@ -221,7 +221,7 @@
                 {
                     "name": "up",
                     "id": "6403bc64-bb62-4005-90ac-e35edb6eb638",
-                    "path": "<Keyboard>/upArrow",
+                    "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",
@@ -232,7 +232,7 @@
                 {
                     "name": "down",
                     "id": "a9f609d1-4254-4951-9a40-24cbbf878d48",
-                    "path": "<Keyboard>/downArrow",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",
@@ -243,7 +243,7 @@
                 {
                     "name": "left",
                     "id": "26a07e2c-cf45-4e8e-b02b-8058ba168989",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",
@@ -254,7 +254,7 @@
                 {
                     "name": "right",
                     "id": "52f5764d-f6f6-4046-83f3-13186b93924d",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",

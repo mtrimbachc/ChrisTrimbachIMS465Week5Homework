@@ -42,9 +42,17 @@ public class InterfaceManager : MonoBehaviour
     //TODO Invoke JoinPlayer passing a playerIndex value and targeting a control scheme
     private void JoinPlayerTwo()
     {
-        Debug.Log("Player2 has joined");
-        //TODO flip text after player has joined to say "Leave Player Two"
-        //TODO on click after player has joined, remove player
+        if (PlayerInput.GetPlayerByIndex(1) == null)
+        {
+            playerInputManager.JoinPlayer(1, "PlayerTwo");
+            //TODO flip text after player has joined to say "Leave Player Two"
+            joinPlayerTwo.GetComponentInChildren<Text>().text = "Leave Player Two";
+        }
+        else    //TODO on click after player has joined, remove player 
+        {
+            playerInputManager.LeavePlayer(1);
+            joinPlayerTwo.GetComponentInChildren<Text>().text = "Join Player Two";
+        }
     }
 
 }

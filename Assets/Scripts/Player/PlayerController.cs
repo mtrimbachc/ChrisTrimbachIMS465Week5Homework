@@ -48,6 +48,10 @@ public class PlayerController : MonoBehaviour
             meshRenderer.material.color = Color.blue;
         }
 
-        //TODO change player two color
+        //Completed change player two color
+        if (playerNumber == PlayerNumber.PlayerTwo)
+        {
+            meshRenderer.material.color = Color.red;
+        }
     }
 }
