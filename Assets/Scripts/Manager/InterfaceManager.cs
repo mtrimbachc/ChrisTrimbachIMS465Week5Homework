@@ -44,7 +44,7 @@ public class InterfaceManager : MonoBehaviour
     {
         if (PlayerInput.GetPlayerByIndex(1) == null)
         {
-            playerInputManager.JoinPlayer(1, "PlayerTwo");
+            playerInputManager.JoinPlayer(1, "P2Keyboard&Mouse");
             //TODO flip text after player has joined to say "Leave Player Two"
             joinPlayerTwo.GetComponentInChildren<Text>().text = "Leave Player Two";
         }

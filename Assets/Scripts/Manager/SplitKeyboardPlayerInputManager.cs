@@ -26,7 +26,6 @@ public class SplitKeyboardPlayerInputManager : MonoBehaviour
         {
             var playerInput = PlayerInput.Instantiate(prefab, controlScheme: controlScheme, playerIndex: playerIndex, pairWithDevice: Keyboard.current);
             playerInput.SwitchCurrentControlScheme(controlScheme);
-            Debug.Log(controlScheme);
             existingPlayerInputs.Add(playerIndex, playerInput);
             SendMessage("OnPlayerJoined", playerInput);
         }
@@ -39,7 +38,6 @@ public class SplitKeyboardPlayerInputManager : MonoBehaviour
         var playerInput = existingPlayerInputs[playerIndex];
 
         existingPlayerInputs.Remove(playerIndex);
-        Debug.Log(existingPlayerInputs.Count);
         SendMessage("OnPlayerLeft", playerInput);
     }
 }

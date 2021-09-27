@@ -221,7 +221,7 @@
                 {
                     "name": "up",
                     "id": "6403bc64-bb62-4005-90ac-e35edb6eb638",
-                    "path": "<Keyboard>/i",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",
@@ -232,7 +232,7 @@
                 {
                     "name": "down",
                     "id": "a9f609d1-4254-4951-9a40-24cbbf878d48",
-                    "path": "<Keyboard>/k",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",
@@ -243,7 +243,7 @@
                 {
                     "name": "left",
                     "id": "26a07e2c-cf45-4e8e-b02b-8058ba168989",
-                    "path": "<Keyboard>/j",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",
@@ -254,10 +254,65 @@
                 {
                     "name": "right",
                     "id": "52f5764d-f6f6-4046-83f3-13186b93924d",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "PlayerTwo",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "P2Move",
+                    "id": "29d85c86-1d68-4122-a18d-d1ab3d00eef1",
+                    "path": "Dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "P2Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "cfe9e0d5-b674-4970-949b-e0759f71a5d7",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "P2Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "c96c9342-067d-46c9-9e7e-afa95b0b3cbe",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "P2Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "9aca6908-21bf-4bbf-b70e-23ad7eb6c742",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "P2Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "9b6ee1dd-a14f-4c49-87d1-a35219258003",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "P2Keyboard&Mouse",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -835,6 +890,22 @@
         {
             "name": "PlayerTwo",
             "bindingGroup": "PlayerTwo",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "P2Keyboard&Mouse",
+            "bindingGroup": "P2Keyboard&Mouse",
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
