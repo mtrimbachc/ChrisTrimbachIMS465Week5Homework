@@ -20,7 +20,8 @@ public class InterfaceManager : MonoBehaviour
     void Start()
     {
         joinPlayerOne.onClick.AddListener(() => JoinPlayerOne());
-        //TODO Listen for player two click event
+        //Completed Listen for player two click event
+        joinPlayerTwo.onClick.AddListener(() => JoinPlayerTwo());
     }
 
     private void JoinPlayerOne()
@@ -31,6 +32,11 @@ public class InterfaceManager : MonoBehaviour
     }
 
     //TODO Invoke JoinPlayer passing a playerIndex value and targeting a control scheme
-    //TODO flip text after player has joined to say "Leave Player Two"
-    //TODO on click after player has joined, remove player
+    private void JoinPlayerTwo()
+    {
+        Debug.Log("Player2 has joined");
+        //TODO flip text after player has joined to say "Leave Player Two"
+        //TODO on click after player has joined, remove player
+    }
+
 }
