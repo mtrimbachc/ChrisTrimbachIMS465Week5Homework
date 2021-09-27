@@ -10,7 +10,9 @@ public class InterfaceManager : MonoBehaviour
     [SerializeField]
     private Button joinPlayerOne;
 
-    //TODO: Add PlayerTwoButton reference
+    [SerializeField] private Button joinPlayerTwo;
+
+    // Completed: Add PlayerTwoButton reference
 
     [SerializeField]
     private SplitKeyboardPlayerInputManager playerInputManager;
