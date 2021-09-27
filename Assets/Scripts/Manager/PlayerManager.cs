@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
 
     public void OnPlayerLeft(PlayerInput playerInput)
     {
-       
+        var playerController = playerInput.GetComponent<PlayerController>();=
+        Destroy(playerController.gameObject);
     }
 }

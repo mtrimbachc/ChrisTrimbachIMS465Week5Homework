@@ -26,9 +26,17 @@ public class InterfaceManager : MonoBehaviour
 
     private void JoinPlayerOne()
     {
-        playerInputManager.JoinPlayer(0, "Keyboard&Mouse");
-        //TODO flip text to say "Leave Player One"
-        //TODO on click after player has joined, remove player
+        if (PlayerInput.GetPlayerByIndex(0) == null)
+        {
+            playerInputManager.JoinPlayer(0, "Keyboard&Mouse");
+            //Completed flip text to say "Leave Player One"
+            joinPlayerOne.GetComponentInChildren<Text>().text = "Leave Player One";
+        }
+        else    //Completed on click after player has joined, remove player
+        {
+            playerInputManager.LeavePlayer(0);
+            joinPlayerOne.GetComponentInChildren<Text>().text = "Join Player One";
+        }
     }
 
     //TODO Invoke JoinPlayer passing a playerIndex value and targeting a control scheme
