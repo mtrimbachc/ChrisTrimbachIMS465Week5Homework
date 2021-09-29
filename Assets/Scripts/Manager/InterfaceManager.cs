@@ -39,16 +39,16 @@ public class InterfaceManager : MonoBehaviour
         }
     }
 
-    //TODO Invoke JoinPlayer passing a playerIndex value and targeting a control scheme
+    //Completed Invoke JoinPlayer passing a playerIndex value and targeting a control scheme
     private void JoinPlayerTwo()
     {
         if (PlayerInput.GetPlayerByIndex(1) == null)
         {
             playerInputManager.JoinPlayer(1, "P2Keyboard&Mouse");
-            //TODO flip text after player has joined to say "Leave Player Two"
+            //Completed flip text after player has joined to say "Leave Player Two"
             joinPlayerTwo.GetComponentInChildren<Text>().text = "Leave Player Two";
         }
-        else    //TODO on click after player has joined, remove player 
+        else    //Completed on click after player has joined, remove player 
         {
             playerInputManager.LeavePlayer(1);
             joinPlayerTwo.GetComponentInChildren<Text>().text = "Join Player Two";

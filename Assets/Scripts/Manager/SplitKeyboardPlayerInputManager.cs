@@ -25,6 +25,7 @@ public class SplitKeyboardPlayerInputManager : MonoBehaviour
         if (!existingPlayerInputs.ContainsKey(playerIndex))
         {
             var playerInput = PlayerInput.Instantiate(prefab, controlScheme: controlScheme, playerIndex: playerIndex, pairWithDevice: Keyboard.current);
+            playerInput.neverAutoSwitchControlSchemes = true; // Needed to ensure Player Two uses the appropriate controls even when added first
             playerInput.SwitchCurrentControlScheme(controlScheme);
             existingPlayerInputs.Add(playerIndex, playerInput);
             SendMessage("OnPlayerJoined", playerInput);
